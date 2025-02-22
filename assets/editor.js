@@ -11,7 +11,7 @@ let euaBalls = [];
 let player = null;
 let selectedObject = null;  // Objeto que está sendo arrastado
 let offsetX, offsetY;
-let euaBallImg = new Image();
+const euaBallImg = new Image();
 euaBallImg.src = "./euaball.png";
 
 // Carrega um mapa salvo, se existir
