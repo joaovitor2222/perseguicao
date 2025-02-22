@@ -161,7 +161,7 @@ function draw() {
 
     // EUA Ball
     const euaBallImg = new Image();
-    euaBallImg.src = "https://static.wikia.nocookie.net/villains/images/f/ff/Estados_Unidos_Countryball.png/revision/latest/thumbnail/width/360/height/360?cb=20230320154917&path-prefix=pt-br";
+    euaBallImg.src = "assets/euaball.png";
     ctx.drawImage(euaBallImg, euaBall.x - 15, euaBall.y - 15, 30, 30);
 
     // Player
