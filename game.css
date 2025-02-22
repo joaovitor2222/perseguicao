@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    display: inline-block;
+}
+
+#gameCanvas {
+    background-color: lightblue;
+    border: 2px solid white;
+}
+
+#status-luz {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#btnDireita {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    padding: 10px;
+}

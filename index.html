@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuja do EUA Ball</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="status-luz"></div> <!-- Mostra a luz verde/vermelha -->
+        <canvas id="gameCanvas"></canvas> <!-- Área do jogo -->
+        <button id="btnDireita">➡️</button> <!-- Botão para celulares -->
+        <br>
+        <button id="btnEditor" onclick="irParaEditor()">🛠 Modo Editor</button> <!-- Botão para o editor -->
+        <button id="btnTutorial" onclick="irParaTutorial()">📚 Tutorial</button> <!-- Botão para o tutorial -->
+        <p id="moedaDisplay">Moedas: 0</p>
+        <button onclick="comprarUpgrade('luz')">Melhorar Luz (10 moedas)</button>
+        <button onclick="comprarUpgrade('congelar')" id="btnCongelar">Congelar EUA (20 moedas)</button>
+        <button onclick="comprarUpgrade('speed')">Aumentar Velocidade (15 moedas)</button>
+    </div>
+
+    <script src="game.js"></script>
+    <script>
+        function irParaEditor() {
+            window.location.href = "editor.html";
+        }
+        function irParaTutorial() {
+            window.location.href = "tutorial.html";  // Redireciona para o tutorial
+        }
+    </script>
+</body>
+</html>

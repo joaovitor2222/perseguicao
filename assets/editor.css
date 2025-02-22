@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 50px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#editorCanvas {
+    background-color: lightgray;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+#aviso {
+    color: red;
+    font-size: 14px; /* Tamanho pequeno */
+    font-weight: bold; /* Negrito para chamar atenção */
+    text-align: center; /* Centralizado */
+    padding: 10px;
+    border: 2px solid #000; /* Borda para destacar */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 80%; /* Para o texto não ocupar toda a largura */
+    margin: 10px auto; /* Centraliza o parágrafo na tela */
+    background-color: #fef2a6; /* Cor de fundo inicial (amarelo forte) */
+    animation: corAlternando 8s infinite; /* Animação de alternância de cores */
+}
+
+@keyframes corAlternando {
+    0% {
+        background-color: rgb(251, 226, 61); /* Amarelo forte */
+    }
+    25% {
+        background-color: #fefea3; /* Amarelo mais fraco */
+    }
+    50% {
+        background-color: #ffffff; /* Branco */
+    }
+    75% {
+        background-color: #a2c6ff; /* Azul claro */
+    }
+    100% {
+        background-color: #4b8cff; /* Azul escuro */
+    }
+}

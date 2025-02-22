@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial - Fuja do EUA Ball</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: #e74c3c;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Tutorial: Fuja do EUA Ball</h1>
+
+        <div class="section">
+            <h2>Objetivo do Jogo</h2>
+            <p>O objetivo do jogo é simples: você deve escapar do EUA Ball e alcançar a linha de vitória! Para isso, você precisará se mover pela tela, evitando ser pego pela bola representando os EUA. O jogador é uma bolinha amarela que deve escapar enquanto a luz de alerta alterna entre vermelha e verde, alterando a velocidade do EUA Ball.</p>
+        </div>
+
+        <div class="section">
+            <h2>Como Jogar</h2>
+            <p>Use a seta para a direita ou o botão na tela para mover o jogador para a direita. O jogador se move apenas quando a luz está verde. Quando a luz está vermelha, o EUA Ball se move mais rápido (a 1,3x ou até 4x a velocidade do jogador, dependendo de suas ações). Fique atento, pois o EUA Ball pode pegar você e causar o fim do jogo!</p>
+            <div class="image-container">
+                <img src="https://static.wikia.nocookie.net/villains/images/f/ff/Estados_Unidos_Countryball.png/revision/latest/thumbnail/width/360/height/360?cb=20230320154917&path-prefix=pt-br" alt="EUA Ball">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Controles</h2>
+            <p>Você pode controlar o jogador de duas maneiras:</p>
+            <ul>
+                <li><strong>Teclado:</strong> Pressione a seta para a direita (→) para mover o jogador.</li>
+                <li><strong>Celular:</strong> Toque no botão de seta (➡️) na tela para mover o jogador.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Luz de Alerta</h2>
+            <p>A cada 10 segundos, a luz de alerta muda de cor. Quando está verde, o jogador pode se mover com segurança. Quando está vermelha, o EUA Ball acelera e se torna mais difícil de escapar. Você deve aproveitar a luz verde para se mover!</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x100.png?text=Luz+Verde" alt="Luz Verde">
+                <img src="https://via.placeholder.com/300x100.png?text=Luz+Vermelha" alt="Luz Vermelha">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Upgrades</h2>
+            <p>Durante o jogo, você pode adquirir upgrades para melhorar suas chances de escapar:</p>
+            <ul>
+                <li><strong>Melhorar a Luz:</strong> Reduza o tempo da luz vermelha, fazendo ela acender por menos tempo, e aumente a duração da luz verde.</li>
+                <li><strong>Aumentar a Velocidade:</strong> Dê um bônus de até 30% na velocidade do jogador.</li>
+                <li><strong>Congelar EUA Ball:</strong> Congela o EUA Ball por 3 segundos, dando uma pausa na perseguição.</li>
+            </ul>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn" onclick="window.location.href='editor.html'">criar seu mapa</button>
+            <button class="btn" onclick="window.location.href='index.html'">Voltar para o jogo</button>
+        </div>
+    </div>
+
+    <script>
+        // Este script pode ser utilizado para futuras interações com o tutorial, caso necessário.
+    </script>
+
+</body>
+</html>

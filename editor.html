@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Mapas</title>
+    <link rel="stylesheet" href="assets/editor.css">
+</head>
+<body>
+    <h1>Editor de Mapas</h1>
+    <p id="aviso">o modo editor pode apagar o mapa original,e pode bugar lá tambem,então recomendo vc zerar o mapa original primeiro e depois criar seus mapas. apenas um aviso.</p>
+    <label>Velocidade do Jogador:</label>
+    <input type="number" id="playerSpeed" value="2" min="1" max="10">
+    
+    <label>Velocidade do EUA Ball:</label>
+    <input type="number" id="euaSpeed" value="1" step="0.1" min="0.1" max="10">
+    
+    <button onclick="adicionarObstaculo()">Adicionar Obstáculo</button>
+    <button onclick="removerUltimoObstaculo()">Remover Último Obstáculo</button>
+    
+    <button onclick="adicionarEuaBall()">Adicionar EUA Ball</button>
+    <button onclick="removerUltimoEuaBall()">Remover Último EUA Ball</button>
+
+    <button onclick="salvarMapa()">💾 Salvar Mapa</button>
+    <button onclick="testarMapa()">🕹 Testar Mapa</button>
+
+    <p><strong>📌 Clique na tela para definir a posição inicial do jogador!</strong></p>
+    <canvas id="editorCanvas"></canvas>
+
+    <button onclick="removerPlayer()">❌ Remover Player</button>
+
+    <br>
+    <button onclick="voltarAoJogo()">🔙 Voltar ao Jogo</button>
+    <h2>Customizar EUA Ball</h2>
+    <input type="file" id="inputImagem" accept="image/*">
+    <button onclick="alterarImagem()">OK</button>
+    <br>
+    <img id="previewImagem" src="https://static.wikia.nocookie.net/villains/images/f/ff/Estados_Unidos_Countryball.png/revision/latest/thumbnail/width/360/height/360?cb=20230320154917&path-prefix=pt-br" width="100">
+
+    <script src="assets/editor.js"></script>
+</body>
+</html>
