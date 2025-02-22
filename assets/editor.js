@@ -12,7 +12,7 @@ let player = null;
 let selectedObject = null;  // Objeto que está sendo arrastado
 let offsetX, offsetY;
 const euaBallImg = new Image();
-euaBallImg.src = "./euaball.png";
+euaBallImg.src = "euaball.png";
 
 // Carrega um mapa salvo, se existir
 if (localStorage.getItem("mapaCustomizado")) {
@@ -142,7 +142,7 @@ canvas.addEventListener("mouseup", () => {
     selectedObject = null;
 });
 
-let euaBallImgSrc = "./euaball.png";
+let euaBallImgSrc = "euaball.png";
 
 // Verifica se o jogador já salvou uma imagem antes
 if (localStorage.getItem("euaBallImg")) {
