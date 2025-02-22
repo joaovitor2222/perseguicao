@@ -12,7 +12,7 @@ let player = null;
 let selectedObject = null;  // Objeto que está sendo arrastado
 let offsetX, offsetY;
 const euaBallImg = new Image();
-euaBallImg.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKR6-9KcS5GYzpYRyJPFqRmvp2escLMnql4A&s";
+euaBallImg.src = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Estados_Unidos_Countryball.png";
 
 // Carrega um mapa salvo, se existir
 if (localStorage.getItem("mapaCustomizado")) {
@@ -142,7 +142,7 @@ canvas.addEventListener("mouseup", () => {
     selectedObject = null;
 });
 
-let euaBallImgSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKR6-9KcS5GYzpYRyJPFqRmvp2escLMnql4A&s";
+let euaBallImgSrc = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Estados_Unidos_Countryball.png";
 
 // Verifica se o jogador já salvou uma imagem antes
 if (localStorage.getItem("euaBallImg")) {
