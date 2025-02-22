@@ -133,7 +133,7 @@ canvas.addEventListener("mouseup", () => {
     selectedObject = null;
 });
 
-let euaBallImgSrc = "https://static.wikia.nocookie.net/villains/images/f/ff/Estados_Unidos_Countryball.png/revision/latest/thumbnail/width/360/height/360?cb=20230320154917&path-prefix=pt-br";
+let euaBallImgSrc = "euaball.png";
 
 // Verifica se o jogador já salvou uma imagem antes
 if (localStorage.getItem("euaBallImg")) {
