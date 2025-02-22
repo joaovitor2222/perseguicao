@@ -12,7 +12,7 @@ let player = null;
 let selectedObject = null;  // Objeto que está sendo arrastado
 let offsetX, offsetY;
 let euaBallImg = new Image();
-euaBallImg.src = "https://static.wikia.nocookie.net/villains/images/f/ff/Estados_Unidos_Countryball.png/revision/latest/thumbnail/width/360/height/360?cb=20230320154917&path-prefix=pt-br";
+euaBallImg.src = "euaball.png";
 
 // Carrega um mapa salvo, se existir
 if (localStorage.getItem("mapaCustomizado")) {
