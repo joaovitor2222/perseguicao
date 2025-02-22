@@ -81,7 +81,7 @@ let euaBallImg = new Image();
 
 // Carregar a imagem salva no localStorage
 let euaBallImgSrc = localStorage.getItem("euaBallImg") || 
-    "https://static.wikia.nocookie.net/villains/images/f/ff/Estados_Unidos_Countryball.png/revision/latest/thumbnail/width/360/height/360?cb=20230320154917&path-prefix=pt-br";
+    "../assets/euaball.png";
 
 
     // Verifica se há um mapa salvo e carrega a imagem escolhida
