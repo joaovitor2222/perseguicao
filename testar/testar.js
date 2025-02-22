@@ -81,7 +81,7 @@ let euaBallImg = new Image();
 
 // Carregar a imagem salva no localStorage
 let euaBallImgSrc = localStorage.getItem("euaBallImg") || 
-    "../assets/euaball.png";
+    "../assets/imagem/euaball.png";
 
 
     // Verifica se há um mapa salvo e carrega a imagem escolhida
