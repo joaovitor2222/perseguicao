@@ -46,6 +46,15 @@ function adicionarObstaculo() {
     desenhar();
 }
 
+euaBallImg.onload = function() {
+    console.log("Imagem carregada!");
+    ctx.drawImage(euaBallImg, 50, 50, 30, 30);
+};
+
+euaBallImg.onerror = function() {
+    console.error("Erro ao carregar a imagem. Verifique o caminho!");
+};
+
 // Adicionar EUA Ball
 function adicionarEuaBall() {
     let x = Math.random() * (canvas.width - 30);
