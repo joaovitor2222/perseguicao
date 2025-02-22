@@ -161,7 +161,7 @@ function draw() {
 
     // EUA Ball
     const euaBallImg = new Image();
-    euaBallImg.src = "assets/euaball.png";
+    euaBallImg.src = "assets/imagem/euaball.png";
     ctx.drawImage(euaBallImg, euaBall.x - 15, euaBall.y - 15, 30, 30);
 
     // Player
