@@ -192,6 +192,65 @@ function alterarImagem() {
     }
 }
 
+// Mudar os eventos de mouse para eventos de toque
+canvas.addEventListener("touchstart", (e) => {
+    e.preventDefault(); // Impede o comportamento padrão de rolagem da tela ao tocar
+
+    const rect = canvas.getBoundingClientRect();
+    const touchX = e.touches[0].clientX - rect.left;
+    const touchY = e.touches[0].clientY - rect.top;
+
+    selectedObject = null;
+
+    // Verifica se tocou no jogador
+    if (player && Math.hypot(touchX - player.x, touchY - player.y) < player.radius) {
+        selectedObject = player;
+        offsetX = touchX - player.x;
+        offsetY = touchY - player.y;
+        return;
+    }
+
+    // Verifica se tocou em um obstáculo
+    for (let obs of obstaculos) {
+        if (touchX >= obs.x && touchX <= obs.x + obs.width &&
+            touchY >= obs.y && touchY <= obs.y + obs.height) {
+            selectedObject = obs;
+            offsetX = touchX - obs.x;
+            offsetY = touchY - obs.y;
+            return;
+        }
+    }
+
+    // Verifica se tocou em um EUA Ball
+    for (let ball of euaBalls) {
+        if (Math.hypot(touchX - ball.x, touchY - ball.y) < ball.radius) {
+            selectedObject = ball;
+            offsetX = touchX - ball.x;
+            offsetY = touchY - ball.y;
+            return;
+        }
+    }
+});
+
+// Mover objeto com o toque
+canvas.addEventListener("touchmove", (e) => {
+    e.preventDefault(); // Impede o comportamento padrão de rolagem da tela ao tocar
+
+    if (selectedObject) {
+        const rect = canvas.getBoundingClientRect();
+        const touchX = e.touches[0].clientX - rect.left;
+        const touchY = e.touches[0].clientY - rect.top;
+        selectedObject.x = touchX - offsetX;
+        selectedObject.y = touchY - offsetY;
+        desenhar();
+    }
+});
+
+// Soltar o objeto (com o toque)
+canvas.addEventListener("touchend", () => {
+    selectedObject = null;
+});
+
 // Salvar o mapa
 function salvarMapa() {
     if (!player) {
