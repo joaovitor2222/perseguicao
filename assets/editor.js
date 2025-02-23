@@ -126,7 +126,6 @@ function verificarColisaoComObstaculo(x, y, radius) {
     return false;  // Não colidiu
 }
 
-
 // Mover objeto arrastado
 canvas.addEventListener("mousemove", (e) => {
     if (selectedObject) {
@@ -280,6 +279,22 @@ function testarMapa() {
     }
     salvarMapa();
     window.location.href = "testar.html";
+}
+
+// Função para adicionar o jogador na posição especificada
+function adicionarPlayer() {
+    if (!player) {  // Verifica se o jogador ainda não foi adicionado
+        const rect = canvas.getBoundingClientRect();
+        // Posição do jogador (pode ser ajustada se o usuário quiser)
+        player = {
+            x: canvas.width / 2, // Posição inicial no centro da tela
+            y: canvas.height / 2, // Posição inicial no centro da tela
+            radius: 10
+        };
+        desenhar(); // Atualiza o canvas para mostrar o jogador
+    } else {
+        alert("O jogador já foi adicionado!");
+    }
 }
 
 // Função para remover o player manualmente (caso bugue)
